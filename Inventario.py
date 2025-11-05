@@ -4,9 +4,9 @@ n=-1
 n2=-1
 #Solicita el nombre del producto al usuario
 nombre = input("Bienvenido por favor ingrese el nombre del producto que desea ingresar: ")
-#Ciclo anidado para asegurarse de que el usuario ingresó bien los datos
+#Inicia un ciclo para asegurarse de que el usuario ingrese bien los datos
 while n != 0:
-    #Se solicita la cantidad de unidades que quiere ingresar del producto al usuario
+    #Se solicita al usuario la cantidad de unidades que quiere ingresar del producto
     cantidad=int(input("Ingrese la cantidad de existencias que hay del producto: "))
     #Condicional para asegurarse que el usuario ingreso un valor aceptable
     if cantidad <= 0:
@@ -15,7 +15,7 @@ while n != 0:
     else:
         #Ciclo anidado para no repetir el proceso anterior
         while n2 != 0:
-            #Solicita al usuario el precio del producto
+            #Solicita al usuario el precio por unidad del producto
             precio=float(input("Digite el costo por unidad del producto: "))
             #Condicional para asegurarse que el usuario ingreso un valor aceptable
             if precio<=0:
